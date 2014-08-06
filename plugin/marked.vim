@@ -13,7 +13,7 @@ set cpo&vim
 
 function s:OpenMarked(background)
   let l:filename = expand("%:p")
-  silent exe "!open -a Marked.app ".(a:background ? '-g' : '')." '".l:filename."'"
+  silent exe "!open -a Marked\ 2.app ".(a:background ? '-g' : '')." '".l:filename."'"
 
   silent exe "augroup marked_autoclose_".l:filename
     autocmd!
